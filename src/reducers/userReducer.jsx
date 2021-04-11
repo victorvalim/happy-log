@@ -1,6 +1,9 @@
 const INITIAL_STATE = {
   isInputVisible: false,
-
+  currentData: {
+    emoticon: null,
+    text: null,
+  },
 };
 
 const userReducer = (state = INITIAL_STATE, action) => {
@@ -9,6 +12,16 @@ const userReducer = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         isInputVisible: !state.isInputVisible,
+      };
+    case 'EMOTICON':
+      return {
+        ...state,
+        currentData: { emoticon: action.payload },
+      };
+    case 'INPUT':
+      return {
+        ...state,
+        currentData: { text: action.payload },
       };
     case 'DATE_ON_CLICK':
       return {

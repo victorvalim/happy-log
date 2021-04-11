@@ -7,7 +7,19 @@ const inputVisibility = () => {
     type: 'INPUT_VISIBILITY',
   }
 }
+const emoticonSelector = (payload) => {
+  return {
+    type: 'EMOTICON',
+    payload,
+  }
+}
 
+const inputSelector = (payload) => {
+  return {
+    type: 'INPUT',
+    payload,
+  }
+}
 const dateOnClick = (payload) => {
   return {
     type: 'DATE_ON_CLICK',
@@ -24,5 +36,7 @@ export default {
   defaultAction,
   inputVisibility,
   dateOnClick,
+  emoticonSelector,
+  inputSelector,
 // eslint-disable-next-line semi
 }

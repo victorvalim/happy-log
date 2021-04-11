@@ -8,13 +8,13 @@ import { Wrapper } from './StyledInputLog';
 // import { useSelector, useDispatch } from 'react-redux';
 // import allActions from '../actions';
 
-function InputLog({ visibility }) {
+function InputLog({ visibility, funct }) {
   return (
     <form>
       <Wrapper visibility={visibility}>
         <label htmlFor="main-input">
           Tell us
-          <input id="main-input" />
+          <textarea onChange={funct} id="main-input" />
         </label>
       </Wrapper>
     </form>
