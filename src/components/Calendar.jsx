@@ -10,7 +10,7 @@ import '../App.css';
 function Calendar({ dayClick }) {
   return (
     <LibCalendar
-      selectRange
+      // selectRange
       view="month"
       onClickDay={dayClick}
       // tileClassName={({ activeStartDate, date, view }) => (classe.some((element) => element == date.getDate()) ? 'classinha' : null)}

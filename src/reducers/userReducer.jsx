@@ -1,12 +1,20 @@
-const userReducer = (state = {}, action) => {
+const INITIAL_STATE = {
+  isInputVisible: false,
+
+};
+
+const userReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    case 'DEFAULT':
+    case 'INPUT_VISIBILITY':
       return {
         ...state,
-        user: action.payload,
-        loggedIn: true,
+        isInputVisible: !state.isInputVisible,
       };
-
+    case 'DATE_ON_CLICK':
+      return {
+        ...state,
+        dateClicked: action.payload,
+      };
     default:
       return state;
   }
