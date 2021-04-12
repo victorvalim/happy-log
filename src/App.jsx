@@ -11,11 +11,12 @@ import allActions from './actions';
 import Calendar from './components/Calendar';
 import InputLogIcons from './components/InputLogIcons';
 import InputLog from './components/InputLog';
+import AddButton from './components/AddButton';
 
 function App() {
   const isInputVisible = useSelector((state) => state.userReducer.isInputVisible);
   const dateClicked = useSelector((state) => state.userReducer.dateClicked);
-
+  const inputText = useSelector((state) => state.userReducer.currentData.text);
   const dispatch = useDispatch();
   // const [value, onChange] = useState(new Date());
   // const [classe, setClasse] = useState(['2', '13', '15', '10', '21']);
@@ -26,6 +27,9 @@ function App() {
 
   function onChangeInput({ target: { value } }) {
     dispatch(allActions.userActions.inputSelector(value));
+  }
+  function addButton() {
+    dispatch(allActions.userActions.resetInput());
   }
 
   function dayClick(value) {
@@ -39,7 +43,8 @@ function App() {
       <Calendar
         dayClick={dayClick}
       />
-      <InputLog visibility={isInputVisible} funct={onChangeInput} />
+      <InputLog visibility={isInputVisible} funct={onChangeInput} inpuText={inputText} />
+      <AddButton visibility={isInputVisible} funct={addButton} />
       <InputLogIcons visibility={isInputVisible} funct={onClickEmoticon} />
     </>
   );

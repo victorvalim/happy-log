@@ -8,17 +8,16 @@ import { Wrapper } from './StyledInputLog';
 // import { useSelector, useDispatch } from 'react-redux';
 // import allActions from '../actions';
 
-function InputLog({ visibility, funct, inpuText }) {
+function AddButton({ visibility, funct }) {
   return (
     <form>
       <Wrapper visibility={visibility}>
-        <label htmlFor="main-input">
-          Tell us
-          <textarea value={inpuText} onChange={funct} id="main-input" />
-        </label>
+        <button onClick={funct} type="button">
+          +
+        </button>
       </Wrapper>
     </form>
   );
 }
 
-export default InputLog;
+export default AddButton;

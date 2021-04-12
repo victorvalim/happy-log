@@ -1,8 +1,8 @@
 const INITIAL_STATE = {
   isInputVisible: false,
   currentData: {
-    emoticon: null,
-    text: null,
+    emoticon: '',
+    text: '',
   },
 };
 
@@ -12,6 +12,14 @@ const userReducer = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         isInputVisible: !state.isInputVisible,
+      };
+    case 'RESET_INPUT':
+      return {
+        ...state,
+        currentData: {
+          text: '',
+          emoticon: '',
+        },
       };
     case 'EMOTICON':
       return {

@@ -7,6 +7,11 @@ const inputVisibility = () => {
     type: 'INPUT_VISIBILITY',
   }
 }
+const resetInput = () => {
+  return {
+    type: 'RESET_INPUT',
+  }
+}
 const emoticonSelector = (payload) => {
   return {
     type: 'EMOTICON',
@@ -38,5 +43,6 @@ export default {
   dateOnClick,
   emoticonSelector,
   inputSelector,
+  resetInput,
 // eslint-disable-next-line semi
 }
