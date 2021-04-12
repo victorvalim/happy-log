@@ -4,6 +4,7 @@ const INITIAL_STATE = {
     emoticon: '',
     text: '',
   },
+  data: [],
 };
 
 const userReducer = (state = INITIAL_STATE, action) => {
@@ -12,6 +13,16 @@ const userReducer = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         isInputVisible: !state.isInputVisible,
+      };
+
+    case 'ADD_INPUT':
+      return {
+        ...state,
+        data: [...state.data, {
+          text: state.currentData.text,
+          emoticon: state.currentData.emoticon,
+          date: state.dateClicked,
+        }],
       };
     case 'RESET_INPUT':
       return {
@@ -24,13 +35,27 @@ const userReducer = (state = INITIAL_STATE, action) => {
     case 'EMOTICON':
       return {
         ...state,
-        currentData: { emoticon: action.payload },
+        currentData: {
+          ...state.currentData,
+          emoticon: action.payload,
+        },
       };
     case 'INPUT':
       return {
         ...state,
-        currentData: { text: action.payload },
+        currentData: {
+          ...state.currentData,
+          text: action.payload,
+        },
       };
+    // case 'INPUT_DATE':
+    //   return {
+    //     ...state,
+    //     currentData: {
+    //       ...state.currentData,
+    //       date: action.payload,
+    //     },
+    //   };
     case 'DATE_ON_CLICK':
       return {
         ...state,

@@ -12,6 +12,11 @@ const resetInput = () => {
     type: 'RESET_INPUT',
   }
 }
+const addInput = () => {
+  return {
+    type: 'ADD_INPUT',
+  }
+}
 const emoticonSelector = (payload) => {
   return {
     type: 'EMOTICON',
@@ -25,6 +30,14 @@ const inputSelector = (payload) => {
     payload,
   }
 }
+
+// const inputDate = (payload) => {
+//   return {
+//     type: 'INPUT_DATE',
+//     payload,
+//   }
+// }
+
 const dateOnClick = (payload) => {
   return {
     type: 'DATE_ON_CLICK',
@@ -44,5 +57,6 @@ export default {
   emoticonSelector,
   inputSelector,
   resetInput,
+  addInput,
 // eslint-disable-next-line semi
 }
