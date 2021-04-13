@@ -37,7 +37,30 @@
   }
 }
 
-.classinha {
-  background-color: black;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMZNFn8arAiZRkMbXmpdzy6GvFpUdZ_F8SAg&usqp=CAU");
+/* .react-calendar {
+  width:900px;
+  height: 600px;
+}
+.react-calendar__tile {
+  font-size: 50px;
+height: 100px;
+} */
+.smile-face {
+  
+  background-image: url("./images/smile.svg");
+  background-clip:border-box;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+.normal-face {
+  background-image: url("./images/normal.svg");
+  background-clip:border-box;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+.sad-face {
+  background-image: url("./images/sad.svg");
+  background-clip:border-box;
+  background-repeat: no-repeat;
+  background-position-x: center;
 }

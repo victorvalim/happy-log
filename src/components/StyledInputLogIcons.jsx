@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const WrapperImg = styled.div`
   width: 50px;
-  visibility: ${(props) => (props.visibility ? 'visible' : 'hidden')};
+  display: ${(props) => (props.visibility ? 'block' : 'none')};
  
 `;
 

@@ -4,18 +4,21 @@ import React from 'react';
 // import { Calendar as LibCalendar } from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import '../App.css';
-import { ToggleSwitch } from 'react-dragswitch';
 import 'react-dragswitch/dist/index.css';
 // import { useSelector, useDispatch } from 'react-redux';
 // import allActions from '../actions';
 
-function HappyLogHeader({ funct, toggleBoolean }) {
+function HappyLog({ data }) {
   return (
     <>
-      <h1>Happy Log</h1>
-      <ToggleSwitch checked={toggleBoolean} onChange={(e) => funct(e)} />
+      {data.map((element) => (
+        <h1>
+          {' '}
+          {element.text}
+        </h1>
+      ))}
     </>
   );
 }
 
-export default HappyLogHeader;
+export default HappyLog;

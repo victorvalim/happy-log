@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable no-mixed-operators */
 /* eslint-disable max-len */
 /* eslint-disable eqeqeq */
@@ -13,6 +14,7 @@ import InputLogIcons from './components/InputLogIcons';
 import InputLog from './components/InputLog';
 import AddButton from './components/AddButton';
 import HappyLogHeader from './components/HappyLogHeader';
+import HappyLog from './components/HappyLog';
 
 function App() {
   const isInputVisible = useSelector((state) => state.userReducer.isInputVisible);
@@ -50,16 +52,31 @@ function App() {
     dispatch(allActions.userActions.dateOnClick(value.toJSON()));
     if (dateClicked == valor || dateClicked == undefined || (dateClicked !== valor && !isInputVisible)) dispatch(allActions.userActions.inputVisibility());
   }
+  // eslint-disable-next-line consistent-return
+  const calendarFunction = (activeStartDate, date, view, data) => {
+
+    // if (data.length) {
+    //   return console.log((data.find((element) => element.date == date.toJSON())).emoticon);
+    // }
+    // return null;
+  };
+  // console.log(date.toString());
+  // console.log(data.toString());
+
+  // if (data !== [] || data !== undefined) console.log(date == data[0].date);
+
   return (
     <>
       <Calendar
+        data={data}
+        funct={calendarFunction}
         dayClick={dayClick}
       />
       <InputLog visibility={isInputVisible} funct={onChangeInput} inpuText={inputText} />
       <AddButton visibility={isInputVisible} funct={addButton} />
       <InputLogIcons visibility={isInputVisible} funct={onClickEmoticon} />
       {data == false || <HappyLogHeader funct={setToggleBoolean} toggleBoolean={toggleBoolean} />}
-      {/* {toggleBoolean && } */}
+      {toggleBoolean && <HappyLog data={data} />}
     </>
   );
 }

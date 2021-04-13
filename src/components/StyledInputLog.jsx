@@ -5,7 +5,7 @@ export const Wrapper = styled.h1`
 width: 500px;
   padding: 4em;
   background: papayawhip;
-  visibility: ${(props) => (props.visibility ? 'visible' : 'hidden')};
+  display: ${(props) => (props.visibility ? 'block' : 'none')};
   
 `;
 
