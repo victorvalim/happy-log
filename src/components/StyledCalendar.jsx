@@ -1,8 +1,6 @@
-// import React from 'react';
 import styled from 'styled-components';
 
 export const WrapperSides = styled.div`
-// background: #f8d4b0;
 position:fixed;
 display:flex;
 flex-direction:row;
@@ -17,15 +15,13 @@ width:50vw;
 z-index:1;
 padding-top:20px;
 top:0;
-
-img{
-  width:50px;
-}
+  img{
+    width:50px;
+  }
 `;
 
 export const WrapperLeft = styled.div`
 width:50vw;
-// position:fixed;
 z-index:1;
 overflow-x:hidden;
 padding-top:20px;

@@ -2,7 +2,6 @@
 /* eslint-disable max-len */
 /* eslint-disable react/prop-types */
 import React from 'react';
-// import { Calendar as LibCalendar } from 'react-calendar';
 import smile from '../images/smile.svg';
 import normal from '../images/normal.svg';
 import sad from '../images/sad.svg';
@@ -12,8 +11,6 @@ import 'react-dragswitch/dist/index.css';
 import {
   WrapperCard, Card, CardLeft, CardRigth, CardDown,
 } from './StyledCardLog';
-// import { useSelector, useDispatch } from 'react-redux';
-// import allActions from '../actions';
 
 function HappyLog({ data }) {
   function imageSelector(info) {
@@ -33,17 +30,13 @@ function HappyLog({ data }) {
     <WrapperCard>
       {data.map((element) => (
         <Card>
-          {/* <CardLeft> */}
           <CardLeft>
             <h4>
               {element.date}
             </h4>
           </CardLeft>
-
-          {/* </CardLeft> */}
           <CardRigth>
             <img src={imageSelector(element.emoticon)} />
-            {/* <h4>{element.emoticon}</h4> */}
           </CardRigth>
           <CardDown>
             <h3>

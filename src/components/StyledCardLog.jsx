@@ -6,10 +6,6 @@ display:flex;
 display-direction:row;
 flex-wrap: wrap;
 height: 100vh;
-// align-content:space-around;
-
-// justify-content:space-between;
-// align-items:flex-start;
 align-content:flex-start;
 
 `;
@@ -23,11 +19,6 @@ display:flex;
 display-direction:row;
 flex-wrap: wrap;
 justify-content:space-between;
-// align-items:center;
-// align-content:space-between;
-// align-items:flex-end;
-// align-items:stretch;
-// align-content:stretch;
 width:23vw;
 height:20vh;
 background-color: #FF4D2D;
@@ -46,7 +37,7 @@ width:23vw;
 height:15vh;
 
 
-// background-color:blue;
+
 overflow-x:hidden;
 overflow-y:scroll;
 ::-webkit-scrollbar{
@@ -67,21 +58,15 @@ margin:0;
 padding:0;
 display:inline;
 height:4vh;
-// background-color:black;
 h4{
   margin:0;
 padding:0;
 width:15vw;
-// height:4vh;
 }
-
 `;
 
 export const CardRigth = styled.div`
 display:inline-block;
-
-// background-color:yellow;
-// height:4vh;
 opacity:0.5;
 img{
   height:4vh;
