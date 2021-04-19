@@ -3,16 +3,16 @@ import styled from 'styled-components';
 
 export const WrapperSides = styled.div`
 // background: #f8d4b0;
+position:fixed;
 display:flex;
 flex-direction:row;
 width:100vw;
-heigth: 100vh;
+height: 100vh;
 
 `;
 
 export const WrapperRigth = styled.div`
 width:50vw;
-
 // position:fixed;
 z-index:1;
 padding-top:20px;

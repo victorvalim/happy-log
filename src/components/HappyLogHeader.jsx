@@ -12,7 +12,7 @@ import 'react-dragswitch/dist/index.css';
 function HappyLogHeader({ funct, toggleBoolean }) {
   return (
     <>
-      <h1>Happy Log</h1>
+      <h1 style={{ color: '#080910' }}>Happy Log</h1>
       <ToggleSwitch checked={toggleBoolean} onChange={(e) => funct(e)} />
     </>
   );
