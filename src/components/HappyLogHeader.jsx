@@ -13,7 +13,7 @@ function HappyLogHeader({ funct, toggleBoolean }) {
   return (
     <>
       <h1 style={{ color: '#080910' }}>Happy Log</h1>
-      <ToggleSwitch checked={toggleBoolean} onChange={(e) => funct(e)} />
+      <ToggleSwitch onColor="#FF4D2D" offColor="#B1AAAA" checked={toggleBoolean} onChange={(e) => funct(e)} />
     </>
   );
 }
