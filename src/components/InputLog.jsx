@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable max-len */
 /* eslint-disable react/prop-types */
 import React from 'react';
@@ -11,12 +12,12 @@ import { Wrapper } from './StyledInputLog';
 function InputLog({ visibility, funct, inpuText }) {
   return (
     <form>
-      <Wrapper visibility={visibility}>
-        <label htmlFor="main-input">
-          Tell us
-          <textarea value={inpuText} onChange={funct} id="main-input" />
-        </label>
-      </Wrapper>
+      {/* <Wrapper visibility={visibility}> */}
+      <label htmlFor="main-input">
+        Tell us
+        <textarea value={inpuText} onChange={funct} id="main-input" />
+      </label>
+      {/* </Wrapper> */}
     </form>
   );
 }

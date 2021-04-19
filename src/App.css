@@ -27,7 +27,21 @@
 .App-link {
   color: #61dafb;
 }
+/* abbr {
+  font-size: 50px;
+  border: thin;
+  border-radius: 50px;
+} */
+/* .react-calendar__month-view__days__day{
+  color:blueviolet;
+  border: 5px solid #080910;
 
+}
+.react-calendar button {
+  margin: 0;
+  border: 5px solid #080910;
+  outline: none;
+} */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -43,24 +57,97 @@
 }
 .react-calendar__tile {
   font-size: 50px;
-height: 100px;
+  height: 100px;
 } */
+.react-calendar__month-view__days__day--weekend {
+  color: #080910;
+  }
+.react-calendar__tile--now {
+  background: #FFa696;
+  border-radius: 100%;
+  color: white;
+
+}
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  border: 3px double #FFa696;
+  background: white;
+
+  /* border: 1px solid #ff4c2d87; */
+  border-radius: 100%;
+}
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  border-radius: 100%;
+  background-color: #FDF4EB;
+}
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: white;
+  color:#080910;
+}
+
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: #FFa696;
+  border-radius: 100%;
+  color: white;
+
+}
+.react-calendar__tile--active {
+  border: 1px solid #FFa696;
+  border-radius:100%;
+  background: white;
+
+  color: #080910;
+}
+.react-calendar {
+  width: 50vw;
+  background: white;
+  border: 1px solid white;
+  font-family: "Poppins", sans-serif;
+}
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 0.75em;
+  text-decoration: none;
+
+}
+.react-calendar__month-view__weekdays abbr{
+  text-decoration: none;
+
+}
+.react-calendar:hover {
+  opacity: 1;
+}
+.react-calendar__tile{
+width: 7.14vw;
+height: 7.14vw;
+}
+
+
 .smile-face {
-  
+  opacity: 1;
   background-image: url("./images/smile.svg");
   background-clip:border-box;
   background-repeat: no-repeat;
   background-position-x: center;
 }
 .normal-face {
+  opacity: 0.8;
+
   background-image: url("./images/normal.svg");
   background-clip:border-box;
   background-repeat: no-repeat;
   background-position-x: center;
 }
 .sad-face {
+  opacity: 0.8;
   background-image: url("./images/sad.svg");
   background-clip:border-box;
   background-repeat: no-repeat;
   background-position-x: center;
 }
+

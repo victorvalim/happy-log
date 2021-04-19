@@ -15,6 +15,9 @@ import InputLog from './components/InputLog';
 import AddButton from './components/AddButton';
 import HappyLogHeader from './components/HappyLogHeader';
 import HappyLog from './components/HappyLog';
+import { Wrapper } from './components/StyledInputLog';
+import { WrapperRigth, WrapperLeft, WrapperSides } from './components/StyledCalendar';
+import { WrapperImg } from './components/StyledInputLogIcons';
 
 function App() {
   const isInputVisible = useSelector((state) => state.userReducer.isInputVisible);
@@ -67,16 +70,24 @@ function App() {
 
   return (
     <>
-      <Calendar
-        data={data}
-        funct={calendarFunction}
-        dayClick={dayClick}
-      />
-      <InputLog visibility={isInputVisible} funct={onChangeInput} inpuText={inputText} />
-      <AddButton visibility={isInputVisible} funct={addButton} />
-      <InputLogIcons visibility={isInputVisible} funct={onClickEmoticon} />
-      {data == false || <HappyLogHeader funct={setToggleBoolean} toggleBoolean={toggleBoolean} />}
-      {toggleBoolean && <HappyLog data={data} />}
+      <WrapperSides>
+        <WrapperRigth>
+          <Calendar
+            data={data}
+            funct={calendarFunction}
+            dayClick={dayClick}
+          />
+          <Wrapper visibility={isInputVisible}>
+            <InputLogIcons funct={onClickEmoticon} />
+            <InputLog funct={onChangeInput} inpuText={inputText} />
+            <AddButton funct={addButton} />
+          </Wrapper>
+        </WrapperRigth>
+        <WrapperLeft>
+          <HappyLogHeader funct={setToggleBoolean} toggleBoolean={toggleBoolean} />
+          {toggleBoolean && <HappyLog data={data} />}
+        </WrapperLeft>
+      </WrapperSides>
     </>
   );
 }

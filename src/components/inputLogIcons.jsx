@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable react/button-has-type */
@@ -19,17 +20,15 @@ import sad from '../images/sad.svg';
 function InputLogIcons({ visibility, funct }) {
   return (
 
-    <WrapperImg visibility={visibility}>
-      <div>
+    <div>
 
-        <img onClick={funct} alt="smile-face" src={smile} />
+      <img onClick={funct} alt="smile-face" src={smile} />
 
-        <img onClick={funct} alt="normal-face" src={normal} />
+      <img onClick={funct} alt="normal-face" src={normal} />
 
-        <img onClick={funct} alt="sad-face" src={sad} />
+      <img onClick={funct} alt="sad-face" src={sad} />
 
-      </div>
-    </WrapperImg>
+    </div>
 
   );
 }
