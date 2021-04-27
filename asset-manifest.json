@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/happy-log/static/css/main.b2bbd23c.chunk.css",
-    "main.js": "/happy-log/static/js/main.f08ecb14.chunk.js",
-    "main.js.map": "/happy-log/static/js/main.f08ecb14.chunk.js.map",
+    "main.css": "/happy-log/static/css/main.9f19ce47.chunk.css",
+    "main.js": "/happy-log/static/js/main.18ed87d2.chunk.js",
+    "main.js.map": "/happy-log/static/js/main.18ed87d2.chunk.js.map",
     "runtime-main.js": "/happy-log/static/js/runtime-main.40a2ac5b.js",
     "runtime-main.js.map": "/happy-log/static/js/runtime-main.40a2ac5b.js.map",
     "static/css/2.c95cd3f7.chunk.css": "/happy-log/static/css/2.c95cd3f7.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.3d5193f1.chunk.js.map": "/happy-log/static/js/3.3d5193f1.chunk.js.map",
     "index.html": "/happy-log/index.html",
     "static/css/2.c95cd3f7.chunk.css.map": "/happy-log/static/css/2.c95cd3f7.chunk.css.map",
-    "static/css/main.b2bbd23c.chunk.css.map": "/happy-log/static/css/main.b2bbd23c.chunk.css.map",
+    "static/css/main.9f19ce47.chunk.css.map": "/happy-log/static/css/main.9f19ce47.chunk.css.map",
     "static/js/2.3ce2556f.chunk.js.LICENSE.txt": "/happy-log/static/js/2.3ce2556f.chunk.js.LICENSE.txt",
     "static/media/add.389259b5.svg": "/happy-log/static/media/add.389259b5.svg",
     "static/media/App.css": "/happy-log/static/media/smile.e86cf067.svg"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.40a2ac5b.js",
     "static/css/2.c95cd3f7.chunk.css",
     "static/js/2.3ce2556f.chunk.js",
-    "static/css/main.b2bbd23c.chunk.css",
-    "static/js/main.f08ecb14.chunk.js"
+    "static/css/main.9f19ce47.chunk.css",
+    "static/js/main.18ed87d2.chunk.js"
   ]
 }
