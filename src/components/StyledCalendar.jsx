@@ -18,7 +18,7 @@ z-index:1;
 padding-top:20px;
 top:0;
   img{
-    width:50px;
+    width:40px;
   }
 `;
 

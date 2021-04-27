@@ -8,6 +8,8 @@ flex-direction:column;
 flex-wrap: nowrap;
 align-items:center;
 background: #f8d4b0;
+height:5vh;
+max-height:5vh;
 display: ${(props) => (props.visibility ? 'flex' : 'none')};
   div {
 
