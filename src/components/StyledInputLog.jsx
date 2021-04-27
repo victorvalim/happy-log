@@ -10,6 +10,7 @@ align-items:center;
 background: #f8d4b0;
 display: ${(props) => (props.visibility ? 'flex' : 'none')};
   div {
+
     width:50vw;
     display:flex;
     justify-content:space-evenly;

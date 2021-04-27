@@ -5,12 +5,14 @@ position:fixed;
 display:flex;
 flex-direction:row;
 width:100vw;
-height: 100vh;
+max-height:100%;
 
 `;
 
 export const WrapperRigth = styled.div`
 width:50vw;
+max-height:100%;
+
 // position:fixed;
 z-index:1;
 padding-top:20px;
@@ -22,6 +24,8 @@ top:0;
 
 export const WrapperLeft = styled.div`
 width:50vw;
+max-height:100%;
+
 z-index:1;
 overflow-x:hidden;
 padding-top:20px;

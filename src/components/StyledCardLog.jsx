@@ -5,7 +5,6 @@ export const WrapperCard = styled.div`
 display:flex;
 display-direction:row;
 flex-wrap: wrap;
-height: 100vh;
 align-content:flex-start;
 
 `;
